@@ -4,15 +4,18 @@ import TelaA from '../screens/TelaA'
 import TelaB from '../screens/TelaB'
 import TelaC from '../screens/TelaC'
 import TelaD from '../screens/TelaD'
+import PassoStack from '../components/PassoStack'
 
 const Tab = createBottomTabNavigator()
 
 export default props => (
-    <Tab.Navigator screenOptions={{
-        activeTintColor: 'green',
-        inactiveTintColor: 'red',
-        labelStyle: { fontSize: 30}
-        }}>
+    <Tab.Navigator 
+        screenOptions={{
+            activeTintColor: 'red',
+            inactiveTintColor: 'blue',
+            labelStyle: { fontSize: 30 }
+        }}
+        >
         <Tab.Screen name="TelaA" component={TelaA}/>
         <Tab.Screen name="TelaB" component={TelaB}/>
         <Tab.Screen name="TelaC" component={TelaC}/>

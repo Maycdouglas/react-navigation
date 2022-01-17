@@ -1,19 +1,15 @@
-import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import React from 'react'
+import TextoCentral from '../components/TextoCentral'
 
 export default props => {
+
+    const numero = props.route
+                && props.route.params
+                && props.route.params.numero ? props.route.params.numero : 0
+    
     return (
-        <View style={style.Center}>
-            <Text style={{fontSize: 40}}> TELA D </Text>
-        </View>
+        <TextoCentral corFundo='pink'>
+            Tela D - {numero}
+        </TextoCentral>
     )
 }
-
-const style = StyleSheet.create({
-    Center: {
-        backgroundColor: 'pink',
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    }
-})

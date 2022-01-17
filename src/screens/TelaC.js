@@ -1,19 +1,8 @@
-import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import React from 'react'
+import TextoCentral from '../components/TextoCentral'
 
-export default props => {
-    return (
-        <View style={style.Center}>
-            <Text style={{fontSize: 40}}> TELA C </Text>
-        </View>
-    )
-}
-
-const style = StyleSheet.create({
-    Center: {
-        backgroundColor: 'yellow',
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    }
-})
+export default props => (
+    <TextoCentral corFundo='yellow'>
+        Tela C
+    </TextoCentral>
+)
